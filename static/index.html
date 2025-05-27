@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>static</h1>
+    <p> - static is used to define properties or methods that belongs to class and is shared between objects</p>
+    <pre id="code">
+class User {
+  static users = 0;
+
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+    User.users++;
+  }
+
+  show() {
+    console.log(`Name: ${this.name}, Age: ${this.age}`);
+  }
+
+  static usersCount() {
+    console.log(`Users: ${User.users}`);
+  }
+
+  sayHello() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+}
+
+const user1 = new User("John", 30);
+user1.show();
+user1.sayHello();
+User.usersCount();
+
+    </pre>
+    <script src="script.js"></script>
+</body>
+
+</html>

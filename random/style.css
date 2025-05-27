@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(79, 15, 132);
+    color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#dices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    margin: 3em;
+    padding: 3em;
+}
+.dice{
+    font-size: 3em;
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 3em;
+
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#dice1{
+    background-color: rgb(167, 30, 30);
+}
+#dice2{
+    background-color: rgb(10, 87, 5);
+}   
+#rollBtn {
+    font-size: 3em;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#rollBtn:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>getters & setters</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>getters & setters</h1>
+  <p> - getter: get the value of a property</p>
+  <p> - setter: set the value of a property</p>
+  <p> - getter and setter are used to protect your data, especially when you want to prevent a user from directly
+    changing a property</p>
+  <pre id="code">
+class Rectangle {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
+  set width(width) {
+    if (typeof width !== "number") {
+      throw new TypeError("width must be a number");
+    }
+    if (width <= 0) {
+      throw new RangeError("width must be positive");
+    }
+    this._width = width;
+  }
+  set height(height) {
+    if (typeof height !== "number") {
+      throw new TypeError("height must be a number");
+    }
+    if (height <= 0) {
+      throw new RangeError("height must be positive");
+    }
+    this._height = height;
+  }
+
+  get width() {
+    return this._width;
+  }
+  get height() {
+    return this._height;
+  }
+}
+const rectangle1 = new Rectangle(10, 20);
+console.log(rectangle1.height);
+console.log(rectangle1.width);
+
+  </pre>
+  <script src="script.js"></script>
+</body>
+
+</html>

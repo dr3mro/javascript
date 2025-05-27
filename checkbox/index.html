@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Radios and Checkboxes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <input type="checkbox" id="cb_red">
+    <label for="cb_red">Make background red</label>
+    <input type="checkbox" id="cb_blue">
+    <label for="cb_blue">Make background blue</label>
+    <button id="btn">click me</button>
+  </div>
+  <div>
+    <input type="radio" id="paypal_rb" name="card">
+    <label for="paypal_rb">Paypal</label>
+    <input type="radio" id="visa_rb"  name="card" >
+    <label for="visa_rb">Visa</label>
+    <input type="radio" id="mastercard_rb" name="card" checked>
+    <label for="mastercard_rb">MasterCard</label>
+    <button id="payBtn">Pay</button>
+    <p id="payment_message"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

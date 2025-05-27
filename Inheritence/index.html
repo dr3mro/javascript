@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>inheritance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>inheritance</h1>
+  <p> - allow a new class to use methods an properties from existing class</p>
+  <p> - the new class is called subclass and the existing class is called superclass</p>
+  <pre id="code">
+class Animal {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  show() {
+    console.log(`Name: ${this.name}, Age: ${this.age}`);
+  }
+  eat() {
+    console.log(`${this.name} is eating.`);
+  }
+}
+
+class Rabbit extends Animal {
+  constructor(name, age, color) {
+    super(name, age);
+    this.color = color;
+  }
+  jump() {
+    console.log(`${this.name} is jumping.`);
+  }
+}
+
+const rabbit1 = new Rabbit("Bunny", 2, "white");
+rabbit1.show();
+rabbit1.eat();
+rabbit1.jump();
+
+    </pre>
+  <script src="script.js"></script>
+</body>
+
+</html>

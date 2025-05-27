@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Constructors</h1>
+    <p> - constructor are used to initialize object fields</p>
+    <pre id="code">
+        function Car(make, model, year, color) {
+            this.make = make;
+            this.model = model;
+            this.year = year;
+            this.color = color;
+        }
+
+        const bmw = new Car("BMW", "X5", 2019, "black");
+        const audi = new Car("Audi", "A4", 2018, "white");
+        const mercedes = new Car("Mercedes", "C-Class", 2017, "silver");
+    </pre>
+    <script src="script.js"></script>
+</body>
+
+</html>

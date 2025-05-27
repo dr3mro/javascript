@@ -1,0 +1,29 @@
+#counterLbl{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: 'helvetica';
+
+}
+
+#btnContainer{
+    text-align: center;
+}
+
+.btns{
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 1.5em;
+    color:aquamarine;
+    background-color: blue;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.btns:hover{
+    background-color: rgb(192, 25, 125);
+}
+
+#background{
+    background-color: rgb(203, 144, 144);
+}   

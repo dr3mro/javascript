@@ -1,0 +1,74 @@
+#container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+h1 {
+    font-size: 3rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 5px #888888;
+    color: #1464cc;
+}
+h1:hover {
+    color: #1464cc;
+    text-shadow: 5px 5px 15px #888888;
+}
+
+body {
+    background-color: #f2a4a4;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #888888;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 2px 2px 2px #666666;
+    transform: translateY(2px);
+}
+input{  
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    text-align: center;
+    max-width: 100px;
+}
+
+#dice{
+    margin: 15px;
+    width: 64px;
+    height: 64px;
+    box-shadow: 5px 5px 5px #888888;
+    opacity: 0;
+    transform: rotate(0deg) scale(0.5);
+    animation: rollIn 0.1s forwards;
+}
+
+/* Dice roll animation */
+@keyframes rollIn {
+    0% {
+        opacity: 0;
+        transform: rotate(-25deg) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+    }
+}
