@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Objects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Nested Objects</h1>
+    <p> Nested objects are objects that are inside of other objects. They are accessed using dot notation.</p>
+    <p>For example, if we have an object called <b>person</b> with a property called <b>name</b>, we can access the name
+        property
+        like this:</p>
+    <pre id="code">person.name</pre>
+    <p>If the <b>name</b> property is an object itself, we can access its properties like this:</p>
+    <pre id="code">
+    person.name.first
+    person.name.last
+    </pre>
+
+    <p>Nested objects can be used to represent complex data structures, such as a person's address
+        or a product's inventory.</p>
+    <p>Here is an example of a nested object representing a person's address:</p>
+    <pre id="code">
+    const person = {
+        name: "John Doe",
+        address: {
+            street: "123 Main St",
+            city: "Anytown",
+            state: "CA",
+            zip: "12345
+        }
+    }
+    </pre>
+    <script src="script.js"></script>
+</body>
+
+</html>

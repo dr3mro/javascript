@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Sort an Array</h1>
+    <p>The sort() method sorts an array alphabetically:</p>
+    <pre id="code">
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+document.getElementById("demo").innerHTML = fruits;
+    </pre>
+
+    <p>you can use custom sort</p>
+    <pre id="code">
+        const fruits1 = [
+  { name: "apple", price: 1.5 },
+  { name: "banana", price: 2.9 },
+  { name: "orange", price: 3.99 },
+];
+
+const sortedFruits = fruits1.sort((left, right) => left.price - right.price);
+sortedFruits.forEach((fruit) => console.log(fruit.name));
+        </pre>
+    <p>The reverse() method reverses the elements in an array.</p>
+    <script src="script.js"></script>
+</body>
+
+</html>
