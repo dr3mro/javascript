@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Closure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Closure</h1>
+  <p>Closure is a function that has access to the parent scope, even after the parent function has closed.</p>
+
+  <pre id="code">
+function outerFunction() {
+  const outerVariable = "outerVar";
+  function innerFunction() {
+    console.log(outerVariable + " called from innerFun");
+  }
+  innerFunction();
+}
+outerFunction();
+</pre>
+  <p>also, its used to keep track of state and to protect private scope</p>
+
+  <pre id="code">
+  function counter() {
+  let count = 0;
+  return function () {
+    count++;
+    console.log(count);
+  };
+}
+const increment = counter();
+increment();
+increment();
+increment();
+</pre>
+
+  <h2>Game score example</h2>
+  <pre id="code">
+  function createGame(){
+    let score = 0;
+    function increment(pts){
+      score+=pts;
+    }
+    function decrement(pts){
+      score-=pts;
+    }
+    function getScore(){
+      return score;
+    }
+    return {
+      increment,
+      decrement,
+      getScore
+    }
+  }
+  const game = createGame();
+  game.increment(10);
+  game.increment(5);
+  game.decrement(3);
+  console.log(game.getScore());
+</pre>
+  <script src="script.js"></script>
+</body>
+
+</html>
