@@ -1,12 +1,12 @@
-import { PI, area, circumference, volume } from "./MathUtils.js";
-import { Person } from "./people.js";
+import * as MathUtils from "./mathutils.mjs";
+import * as People from "./people.mjs";
 
-console.log(`PI: ${PI}`);
-console.log(`Area: ${area(5).toFixed(2)} cm2`);
-console.log(`Circumference: ${circumference(5).toFixed(2)} cm`);
-console.log(`Volume: ${volume(5).toFixed(2)} cm3`);
+console.log(`PI: ${MathUtils.PI}`);
+console.log(`Area: ${MathUtils.area(5).toFixed(2)} cm2`);
+console.log(`Circumference: ${MathUtils.circumference(5).toFixed(2)} cm`);
+console.log(`Volume: ${MathUtils.volume(5).toFixed(2)} cm3`);
 
-const person = new Person("John Doe", 30);
+const person = new People.Person("John Doe", 30);
 person.greet();
 
 console.log("Hello World");
