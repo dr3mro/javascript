@@ -45,12 +45,11 @@ button:active{
 #display-container{
     background-color: hsl(0, 0%, 20%);
     border-radius: 5px;
-    color: white;
-    font-size: 24px;
-    padding: 10px;
-    text-align: left;
-    margin-bottom: 10px;
-    height: 6rem;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    height: 120px;
+    margin-bottom: 20px;
 
 }
 #display{
