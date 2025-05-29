@@ -17,7 +17,7 @@ function appendToDisplay(value) {
   }
   const lastChar = display.value.charAt(display.value.length - 1);
 
-  if (isNaN(lastChar) && isNaN(value)) {
+  if (isNaN(lastChar) && isNaN(value) && value !== ".") {
     display.value = display.value.slice(0, -1) + value;
   } else {
     display.value += value;
