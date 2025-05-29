@@ -16,13 +16,12 @@
 
     <div id="buttons">
       <button id="clear" onclick="clearDisplay()" class="clear">C</button>
-      <button class="ghost"></button>
-      <button class="ghost"></button>
+      <button id="delete" onclick="deleteLastCharacter()" class="delete">DEL</button>
       <button id="multiply" onclick="appendToDisplay('*')" class="operator">*</button>
       <button id="seven" onclick="appendToDisplay('7')">7</button>
       <button id="eight" onclick="appendToDisplay('8')">8</button>
       <button id="nine" onclick="appendToDisplay('9')">9</button>
-      <button id="subtract" onclick="appendToDisplay('-')" class="operator">-</button>
+      <button id="subtract" onclick="appendToDisplay('/')" class="operator">/</button>
       <button id="four" onclick="appendToDisplay('4')">4</button>
       <button id="five" onclick="appendToDisplay('5')">5</button>
       <button id="six" onclick="appendToDisplay('6')">6</button>
@@ -30,10 +29,10 @@
       <button id="one" onclick="appendToDisplay('1')">1</button>
       <button id="two" onclick="appendToDisplay('2')">2</button>
       <button id="three" onclick="appendToDisplay('3')">3</button>
-      <button id="divide" onclick="appendToDisplay('/')" class="operator">/</button>
+      <button id="divide" onclick="appendToDisplay('-')" class="operator">-</button>
       <button id="zero" onclick="appendToDisplay('0')">0</button>
       <button id="decimal" onclick="appendToDisplay('.')">.</button>
-      <button id="delete" onclick="deleteLastCharacter()" class="delete">DEL</button>
+
       <button id="equals" onclick="calculate()" class="equals">=</button>
 
     </div>

@@ -65,12 +65,14 @@ button:active{
 
 .equals{
     background-color: hsl(208, 99%, 50%);
+    grid-column: span 2;
+    width: 100%;
 }
-button:hover{
+.equals:hover{
     background-color: hsl(0, 0%, 40%);
 }
 
-button:active{
+.equals:active{
     background-color: hsl(0, 0%, 30%);
     transform: translateY(1px);
 }
@@ -93,19 +95,11 @@ button:active{
     background-color: hsl(0, 0%, 30%);
     transform: translateY(1px);
 }
-.ghost{
-    background-color: hsl(0, 0%, 15%);
-}
-.ghost:hover{
-    background-color: hsl(0, 0%, 15%);
-}
-
-but.ghostton:active{
-    background-color: hsl(0, 0%, 15%);
-}
 
 .clear{
     background-color: hsl(0, 77%, 50%);
+    
+
 }
 .clear:hover{
     background-color: hsl(0, 77%, 40%);
@@ -117,6 +111,7 @@ but.ghostton:active{
 }
 .delete{
     background-color: hsl(0, 68%, 64%);
+    grid-column: span 2;
 }
 .delete:hover{
     background-color: hsl(0, 68%, 40%);
