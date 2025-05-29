@@ -45,12 +45,12 @@ button:active{
 #display-container{
     background-color: hsl(0, 0%, 20%);
     border-radius: 5px;
-    align-items: center;
+    align-items: left;
     display: flex;
     justify-content: flex-end;
     height: 120px;
     margin-bottom: 20px;
-    margin-top: 25px;
+    margin-top: 20px;
 
 }
 #display{
@@ -61,6 +61,7 @@ button:active{
     font-size: 5rem;
     width: 100%;
     overflow: hidden;
+    margin: auto;
 }
 
 .equals{
