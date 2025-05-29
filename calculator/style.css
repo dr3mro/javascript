@@ -50,6 +50,7 @@ button:active{
     justify-content: flex-end;
     height: 120px;
     margin-bottom: 20px;
+    margin-top: 25px;
 
 }
 #display{
